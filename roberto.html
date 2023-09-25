@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            color:blue;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+     body{padding: 2%;}
+     fieldset{background-color:black;}
+     
+    input,select{ width: 100% !important;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: 2s;}
+    
+    input[type="submit"]{background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+    height: 30px;
+    cursor: pointer;}
+
+    label{color: green;
+    font-weight: bold;}
+    legend{font-weight: x-large;}
+    
+    
+    textarea:focus,input:focus{background-color: blue;
+        height: 120px;
+        columns: 50;
+        height: 100px;
+        resize:none;
+        margin-bottom: 10px;}</style>
+    
+</head>
+<body>
+    <fieldset>
+        <legend> Cadastro de Notas</legend>
+            <form action="">
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu Nome">
+                <label> Curso</label>
+                <select>
+                    <option value="E"> Excel</option>
+                    <option value="PS">Programador de Sistema</option>
+                    <option value="DF">Desenvolvedor Fullstack</option>
+                    
+                </select>
+                <label>Nota</label>
+                <input type="number" min="0" max="10">
+                <label>Observação</label>
+                <textarea cols="100" rows="10" >"Digite uma Observação"</textarea>
+                <input type= "submit" value="salvar">
+
+            </form>
+        </legend>
+    </fieldset>
+    
+</body>
+</html>
